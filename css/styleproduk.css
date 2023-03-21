@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #eaeaea;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  font-size: 14px;
+}
+
+.txt-produk-name{
+  color:black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.txt-produk-harga{
+  color:red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.text-desc{
+  color:black;
+  font-size: 13px;
+  font-weight: bold;
+}
+.cont-harga {
+  background-color:#eee; 
+  padding:6px 3px;
+}
+.nav-link .active{
+  color: red;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  background-color: #efefef;
+  margin-bottom: 0;
+  border-radius: 20px;
+  list-style: none;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  background: none;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border: 2px solid red transparent;
+  border-top-right-radius: 0.25rem;
+}
+
+.beli {
+  background-color: red;
+}
+
+.table-pengiriman {
+  border: 0px;
+  font-size: 2px;
+}
+h5 {
+  font-size: 25px;
+  color: black;
+  margin: 0;
+}
+.btn-ambilditoko {
+  color: white;
+  height: 30px;
+  width: 100px;
+  background-color: #0077a2;
+  border: none;
+  font-size: 13px;
+}
+.btn-cicilan {
+  color: white;
+  height: 30px;
+  width: 150px;
+  background-color: #0077a2;
+  border: none;
+  font-size: 13px;
+}
+.btn-cart {
+  color: white;
+  height: 30px;
+  width: 190px;
+  background-color: #0077a2;
+  border: none;
+  font-size: 13px;
+}
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  margin-left:32px;
+  border:none;
+  text-align: left;
+}
+
+.inp-qty  {
+  width: 50px;
+  left: 10px;
+  height: 30px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  align-items:center;
+  font-size: 12px;
+  font-weight: bold;
+  top:0;
+  bottom: 10px;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #eee;
+  background-color: #0077a2;
+  width: 20px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  margin-right:-100px;
+  top:3px;
+  margin-left:30px;
+  height: 50%;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  top:3px;
+  left:-60px;
+  height: 50%;
+}
+/*breadcrumb*/
+.navigasi {
+  margin-top: 120px;
+}
+
+.navigasi ol {
+  padding: 10px;
+}
+
+.navigasi li a {
+  text-decoration: none;
+  color: #0077a2;
+}
+
+/*gambar */
+.bg-produk {
+  background-color: white;
+  margin: 0;
+  padding: 5px;
+  padding-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.figure img {
+  border-radius: 5px;
+  width: 800px;
+}
+
+.small img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.garis-nama {
+  border-bottom: 2px solid #2d2d2d;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.nama .span {
+  font-size: 20px;
+}
+
+.btn-produk {
+  margin-top: 1px;
+}
+
+.btn-produk a {
+  font-size: 14px;
+  height: 36px;
+  background-color: #15b9da;
+  border: none;
+}
+
+/*deskripsi*/
+.desc-produk {
+  background-color: white;
+  margin: 0;
+  padding: 5px;
+  padding-top: 15px;
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+
+.desc-produk button {
+  color: black;
+}
+
+.review-img {
+  width: 50px;
+}
+
+.review-name {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.review-desc {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.deskripsi {
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.deskripsi::-webkit-scrollbar {
+  display: none;
+}
+
+.review {
+  height: 250px;
+  overflow: scroll;
+}
+
+.review::-webkit-scrollbar {
+  display: none;
+}
+
+.garis-vertikal {
+  border: 1px solid beige;
+}
+
+/*responsive*/
+@media screen and (max-width: 540px) {
+  .btn-produk a {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .small img {
+    width: 65px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-review {
+    width: auto;
+  }
+
+  .name-star {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 994px) {
+  .form-control {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}

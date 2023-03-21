@@ -1,0 +1,1035 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  top: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  font-size: 14px;
+}
+.cont-laporan{
+  margin:5rem;
+  font-size: 12px;
+  padding: 10px 10px 10px 10px;
+}
+.inp-lap{
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.btn-text{
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+.btn-sp{
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  width: 15rem;
+  font-size: 12px;
+}
+ .sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 6rem;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  overflow-x: auto;
+  padding-top: 20px;
+  }
+  /* Style the sidenav links and the dropdown button */
+
+  .dropdown-btnn{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #eeeeee;
+      margin-bottom:7px;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      outline: none;
+  }
+  .dropdown-btn{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color:white;
+      margin-bottom:7px;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      outline: none;
+  }
+  .text-dr{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 12px;
+      color: white;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+  }
+  .text-sp{
+      text-decoration: none;
+      font-size: 13px;
+      color: #575757;
+      font-family: "Poppins", sans-serif;
+  }
+  .btn-sp{
+      font-size: 13px;
+      color: rgb(99, 99, 99);
+      background-color: #eeeeee;
+      font-family: "Poppins", sans-serif;
+      width: 8rem;
+  }
+  .text-s-input{
+      text-decoration: none;
+      font-size: 13px;
+      color: #575757;
+      font-family: "Poppins", sans-serif;
+      border: 2px solid #eeeeee;
+      padding: 5px 5px;
+      border-radius: 10px;
+  }
+  .text-dp{
+      padding: 5px 10px ;
+      text-decoration: none;
+      font-size: 12px;
+      color: grey;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      
+  }
+
+  /* On mouse-over */
+  .text-dr:hover, .dropdown-btn:hover {
+  color:white;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-decoration:none;
+  }
+  .stikers {
+    color: white;
+    width: 50px;
+    height: 26px;
+    padding: 5px;
+    background-color:#10a5d3  ;
+    font-size: 11px;
+    text-align: center;
+    border-top-right-radius: 50px  ;
+    border-bottom-right-radius: 50px  ;
+  }
+  /* Main content */
+  .main {
+  margin-left: 180px;
+  font-size: 20px;
+  padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  }
+
+
+  .dropdown-ct {
+  display: none;
+  background-color: #10a5d3 ;
+  color: white;
+  padding-left: 8px;
+  font-family: "Poppins", sans-serif;
+  }
+
+  .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  }
+
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+
+  .ct {
+  max-width: 100%;
+  padding: 10px;
+  }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.txt-side {
+  font: 13px;
+  color: white;
+}
+.side {
+  background-color: #10a5d3;
+  margin-top: 1rem;
+  margin-left: 15px;
+  border-radius: 10px;
+  border: 1px solid #10a5d3 ;
+  padding: 10px 20px;
+  color: white;
+  width: 15rem;
+  height: 40rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.main-body {
+  background-color: white;
+  margin-top: 1rem;
+  margin-left: 17rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: #eeeeee;
+  width: 67rem;
+  height: 39rem;
+  position: fixed;
+  z-index: 1;
+}
+.judul-side {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.icon-media {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 3px;
+  padding: 10px 20px;
+  position: absolute;
+}
+/* Button */
+.btn-laporan {
+  width: 10rem;
+  background-color: #10a5d3 ;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  height: 4rem;
+  border: 1px solid #10a5d3 ;
+  border-radius: 10px;
+}
+/* Button */
+.tx-card {
+  width: 9rem;
+  font-size: 13px;
+  border: none;
+}
+.prtampil {
+  display: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  resize: none;
+}
+.hg-card {
+  width: 9rem;
+  font-size: 13px;
+  border: none;
+  color: red;
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgb(202, 202, 202);
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(231, 231, 231);
+  border-radius: 10px;
+  height: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 197, 197);
+}
+
+/*header*/
+.header {
+  background: #10a5d3 ;
+  width: 100%;
+  color: #ffffff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+
+.form-control {
+  width: 650px;
+  font-size: 14px;
+  justify-items: center;
+}
+
+.head-navbar {
+  padding: 0;
+  font-size: 15px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.bar {
+  padding: 0;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cart {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.header-font {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.main {
+  display: inline-block;
+  justify-content: center;
+}
+
+.weight {
+  font-weight: bold;
+}
+
+.icon-media {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+/*header*/
+
+
+.sale .diskon span {
+  background-color: transparent;
+}
+
+.diskon-fl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* right: -118px; */
+  top: -14px;
+  background-color: #000099;
+  width: 40px;
+  height: auto;
+}
+
+.total {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-fl span {
+  background-color: #ffffff;
+  color: #2d2d2d;
+  font-size: 10px;
+  padding: 2px;
+  font-weight: 400;
+}
+
+.progress {
+  left: 0;
+  width: 100%;
+  border-radius: 11px;
+  background-color: #9debfb;
+  display: flex;
+  height: 17px;
+  overflow: hidden;
+}
+.text-progress {
+  align-items: center;
+  justify-content: center;
+}
+
+.progress img {
+  left: -25px;
+  top: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* .progress-on {
+  background-color: #10a5d3 ;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75%;
+  z-index: 5;
+  height: 100%;
+} */
+
+.progress span {
+  background-color: transparent;
+  color: #2d2d2d;
+  font-size: 12px;
+  position: relative;
+  z-index: 7;
+  font-weight: 400;
+}
+
+.row-card {
+  height: 250px;
+  border-top: 1px solid #9b9b9b7a;
+}
+
+.wrap-img-sale {
+  height: auto;
+  width: auto;
+  /*position: relative;*/
+}
+
+/* Flash Sale*/
+
+/* Produk Terlaris*/
+.pd {
+  width: 100px;
+
+  background-color: red;
+}
+
+.pdk {
+  font-size: 10px;
+  color: yellow;
+  margin-top: 50px;
+}
+
+.diskon-fll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* right: -118px; */
+  top: -14px;
+  background-color: #000099;
+  width: 61px;
+  height: auto;
+}
+
+/* Produk Terlaris*/
+
+/* Produk*/
+
+.judul-produk {
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.produk a {
+  text-decoration: none;
+  color: black;
+}
+
+.h5 {
+  margin-top: 0;
+}
+
+.price-produk {
+  font-weight: 765;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card-produk {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 12px;
+}
+
+.rating .terjual {
+  text-align: right;
+}
+
+.card-img-top {
+  width: auto;
+  height: 140px;
+}
+
+.lainnya {
+  margin-top: 10px;
+  color: black;
+  font-size: 15px;
+  background-color: #10a5d3 ;
+}
+
+.lainnya1 {
+  margin: 0px;
+}
+
+.produkk {
+  color: #000099;
+}
+
+.produkk:nth-child(1) {
+  display: block;
+}
+
+.produkk:nth-child(2) {
+  display: block;
+}
+
+.terjual {
+  font-size: 10px;
+  border: 0px;
+}
+
+#label-go {
+  margin-left: 100px;
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  color: white;
+  width: 80px;
+  padding: 5px;
+  margin: 0;
+  background-color: #1925ca;
+  font-size: 10px;
+  text-align: center;
+}
+
+#label-cb {
+  margin-left: 100px;
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  color: rgb(255, 5, 5);
+  width: 75px;
+  height: 25px;
+  padding: 5px;
+  margin: 0;
+  background-color: #fbff00;
+  font-size: 11px;
+  text-align: center;
+}
+
+#label-event {
+  margin-left: 100px;
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  background-color: red;
+  color: white;
+  width: 30px;
+  padding: 5px;
+  margin: 0;
+  background-color: #eb2f2f;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* Produk*/
+
+/*footer*/
+.footer {
+  margin-top: 20px;
+}
+
+.help {
+  border-top: 3px solid #10a5d3 ;
+  top: 10px;
+  position: relative;
+  background-color: rgb(248, 249, 250);
+  font-size: 12px;
+}
+
+.help p {
+  font-weight: 600;
+}
+
+.help a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.help a:hover {
+  color: #10a5d3  ;
+}
+
+/*footer*/
+
+/*popup-chat*/
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(212, 212, 212);
+  padding: 6px 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  width: 110px;
+  z-index: 5;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-right: 24px;
+}
+
+#chat {
+  width: 25px;
+  height: 25px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99999;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 250px;
+  padding: 10px;
+  background-color: #10a5d3 ;
+  border-radius: 20px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+  resize: none;
+  min-height: 150px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #0a58ca;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  cursor: pointer;
+  width: 110px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.btn-lainnya {
+  width: 10rem;
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #10a5d3 ;
+  color: white;
+  border: none;
+  margin-left: 45%;
+}
+
+.btn-lg {
+  width: 13.5rem;
+  margin-left: 10px;
+  align-items: left;
+  color: #10a5d3  ;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #eeeeee;
+}
+.btn-rg {
+  width: 5rem;
+  color: #10a5d3  ;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+/*popup-chat*/
+
+/*popup-chat*/
+.text-ft-mobile {
+  font-size: 10px;
+}
+.footer-mobile {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #10a5d3 ;
+  color: white;
+  text-align: center;
+}
+/*popup-chat*/
+
+/*pop Up iklan*/
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.popbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000000;
+}
+
+.pop-content {
+  width: 400px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -200px;
+  z-index: 2;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.popcontent {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popbox-close-button {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  top: -25px;
+  right: -25px;
+  background-color: #fff;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0;
+  display: inline-block;
+}
+
+.popcontent img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.flowbox {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 840px) {
+  .pop-content {
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -150px;
+  }
+  .footer-mobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #10a5d3 ;
+    color: white;
+    text-align: center;
+    display: none;
+  }
+}
+
+/*pop Up iklan*/
+
+/*Responsive*/
+@media screen and (min-width: 1200px) {
+  .search .row {
+    justify-content: center;
+  }
+
+  .bar {
+    margin-left: 20px;
+  }
+  .footer-mobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #10a5d3 ;
+    color: white;
+    text-align: center;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form-control {
+    margin-left: 100px;
+  }
+
+  .cart {
+    margin-left: 30px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-font {
+    display: none;
+  }
+
+  .icon-media {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bar {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .navbar-nav {
+    text-align: start;
+  }
+
+  .carousel-inner {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: start;
+  }
+
+  .carousel-inner {
+    position: relative;
+  }
+
+  .help {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  /* flashsale*/
+
+  .card {
+    max-width: 200px;
+  }
+
+  .progress img {
+    left: -15px;
+    top: 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  .diskon-fl {
+    max-width: 25px;
+    max-height: auto;
+    right: -90px;
+  }
+
+  .diskon-fl > span {
+    font-size: 10px;
+  }
+
+  .image-fl > img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .price-fl span {
+    font-size: 12px;
+  }
+
+  .progress span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .logo {
+    width: 75px;
+  }
+
+  .navbar .a {
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .carousel-inner {
+    position: relative;
+  }
+
+  .form-control {
+    width: 170px;
+  }
+
+  .bar ::placeholder {
+    font-size: 12px;
+  }
+
+  .logo {
+    padding: 0;
+    width: 75px;
+  }
+
+  .bar {
+    margin: 0;
+    margin-right: 2px;
+  }
+
+  .footer span {
+    font-size: 10px;
+  }
+  .footer-buttom {
+    display: none;
+  }
+  .tabel-kategori td {
+    height: 20px;
+    width: 1rem;
+  }
+  .img-kategori {
+    width: 30px;
+    height: 30px;
+  }
+  .tabel-kategori p {
+    font-size: 7px;
+    text-decoration: none;
+    height: 25px;
+    width: 3rem;
+  }
+  .footer-mobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #10a5d3 ;
+    color: white;
+    text-align: center;
+    display: block;
+  }
+  .open-button {
+    background-color: rgb(226, 226, 226);
+    padding: 6px 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 5rem;
+    width: 100px;
+    z-index: 5;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+
+/*Responsive*/

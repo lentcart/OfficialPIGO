@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: white;
+  font-family: "Poppins", sans-serif;
+  /* font-size:0.9em !important; */
+}
+.tb-transaksi{
+  font-family: "Poppins", sans-serif;
+}
+.txt-desc{
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.invoice {
+  background-color: #eeeeee;
+  width: 970px !important;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+.invoice-header {
+  padding:10px;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+}
+.txt-a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+.txt-judul{
+  font-size: 16px;
+  align-items: center;
+  font-weight:bold;
+  font-family: "Poppins", sans-serif;
+}
+.btn-sp{
+  background-color: white;
+  font-size: 12px;
+  color:grey;
+  border: none;
+  width: 8rem;
+  padding: 5px 10px;
+  align-items: left;
+}
+.media-body {
+  font-size: 0.9em;
+  margin: 0;
+}
+.sr {
+  background-color: rgb(0, 168, 219);
+  border: none;
+}
+.invoice-body {
+  background: #eeeeee;
+}
+.invoice-footer {
+  padding: 15px;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #999;
+}
+
+        /* Fixed sidenav, full height */
+        .sidenav {
+          height: 85%;
+          width: 200px;
+          position: fixed;
+          z-index: 1;
+          top: 6rem;
+          left: 0;
+          font-family: "Poppins";
+          background-color: white;
+          overflow-x: auto;
+          padding-top: 20px;
+          }
+          /* Style the sidenav links and the dropdown button */
+  
+          .dropdown-btn{
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 14px;
+              color: #818181;
+              margin-bottom:7px;
+              display: block;
+              border: none;
+              border-radius:20px;
+              background: none;
+              font-family: "Poppins";
+              width: 100%;
+              text-align: left;
+              cursor: pointer;
+              outline: none;
+          }
+          .dp-btn{
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 14px;
+              color: #818181;
+              margin-bottom:7px;
+              display: block;
+              border: none;
+              border-radius:20px;
+              background: none;
+              font-family: "Poppins";
+              width: 100%;
+              text-align: left;
+              cursor: pointer;
+              outline: none;
+          }
+          .text-dr{
+              padding: 6px 8px 6px 16px;
+              text-decoration: none;
+              font-size: 12px;
+              color: #818181;
+              display: block;
+              border: none;
+              border-radius:20px;
+              background: none;
+              font-family: "Poppins";
+              width: 100%;
+              text-align: left;
+              cursor: pointer;
+              outline: none;
+          }
+  
+          /* On mouse-over */
+          .text-dr:hover, .dropdown-btn:hover {
+          color: #85a1b4;
+          font-family: "Poppins";
+          text-decoration:none;
+          }
+  
+          /* Main content */
+          .main {
+          margin-left: 200px; /* Same as the width of the sidenav */
+          font-size: 20px; /* Increased text to enable scrolling */
+          padding: 0px 10px;
+          font-family: "Poppins";
+          padding-top: 20px;
+          }
+  
+  
+          .dropdown-ct {
+          display: none;
+          background-color: white;
+          padding-left: 8px;
+          font-family: "Poppins";
+          }
+  
+          .fa-caret-down {
+          float: right;
+          padding-right: 8px;
+          }
+  
+          @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+          }
+  
+          .ct {
+          max-width: 100%;
+          padding: 10px;
+          }
+.logo {
+  max-height: 70px;
+  border-radius: 10px;
+}
+.dl-horizontal {
+  margin: 0;
+}
+dt {
+  float: left;
+  width: 12rem;
+  overflow: hidden;
+  clear: left;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+dd {
+  margin-left: 10rem;
+}
+.rowamount {
+  padding-top: 15px !important;
+}
+.rowtotal {
+  font-size: 12px;
+}
+.colfix {
+  width: 12%;
+}
+.mono {
+  font-family: monospace;
+}

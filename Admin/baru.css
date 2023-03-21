@@ -1,0 +1,471 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poopins", sans-serif;
+}
+body{
+    background-color: white;
+
+}
+h2 {
+    font-size: 18px;
+    padding: 15px 0 ;
+}
+h2 > span {
+    font-size: 14px;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.5%;
+    margin-top: 0px ;
+    left: 1rem;
+    height: 55px;
+    top: 5px;
+    background-color: #eee;
+    z-index: 2;
+    right: 1rem;
+    padding-left:4.6rem;
+    border-radius: 20px;
+}
+.profile{
+    display: flex;
+    width: 32%;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.profile-image{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-name{
+    font-size: 0.9rem;
+    margin-left: -20px;
+}
+
+.side-toggle{
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    left: 45px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 17px;
+    top: 70px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #10a5d3;
+}
+.sidebar-menu {
+    align-items: center;
+    padding: 13px 20px;
+    width: 100%;
+    left: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.sidebar-menu>span{
+    font-size:25px;
+    padding-right: 30px;
+}
+.sidebar-menu:hover{
+    color: #10a5d3;
+    background-color: white;
+}
+
+#toggle:checked ~ .sidebar{
+    width: 70px;
+}
+#toggle:checked ~ .sidebar .sidebar-menu > p {
+    display: none;
+}
+#toggle:checked ~ main {
+    padding: 6rem 2rem 2rem 6rem;
+}
+main{
+    min-height: 100%;
+    padding: 6rem 1rem 2rem 14rem;
+    color: #201f2b;
+
+}
+.dashboard-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas:
+    "total1 total2 total3 total4 total4"
+    "detail detail detail customer customer"
+    "detail detail detail customer customer";
+}
+.card{
+    background-color: white;
+    border-radius:10px;
+    width: 100%;
+    height: 80%;
+}
+
+.total1{
+    grid-area: total1;
+    background-color: #929292;
+    color: white;
+        top: -63px;
+}
+.total2{
+    grid-area: total2;
+    background-color: #eee;
+    color:white;
+        top: -63px;
+}
+
+.total3{
+    grid-area: total3;
+    background-color: #eee;
+    color: white;
+        top: -63px;
+}
+.total4{
+    grid-area: total4;
+    background-color: #eee;
+    color:white;
+        top: -63px;
+}
+
+.detail{
+    grid-area: detail;
+    overflow-x: auto;
+        top: -65px;
+
+}
+.customer{
+    grid-area: customer;
+    overflow-x: auto;
+        top: -65px;
+
+}
+
+.info{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-detail h2{
+    font-size: 24px;   
+}
+.info-detail p {
+    font-size: 14px;
+}
+
+.info-image{
+    font-size: 50px;
+    color:#10a5d3;
+}
+
+.detail-header{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-header button {
+    height: 30px;
+    width: 120px;
+    border:1px solid #10a5d3;
+    background-color: #10a5d3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.detail-header button:hover{
+    background-color: transparent;
+    color:#10a5d3;
+}
+
+.detail table{
+    width: 100%;
+    border-collapse:  collapse;
+}
+
+.detail table tr:nth-child(odd){
+    background-color: #f8f8fb;
+}
+
+.detail table th{
+    background-color: #f4f4f4;
+}
+
+.detail table th, 
+.detail table td {
+    padding: 0.8rem 0.2rem;
+    text-align: left;
+    min-width: 120px;
+    font-size:14px;
+}
+
+.detail table tr:hover{
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #10a5d3;
+}
+.detail table tr td:nth-child(2), 
+.detail table tr td:nth-child(3) {
+    min-width: 150px;
+}
+
+.status{
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1;
+    font-size: 0.7rem;
+}
+
+.onprogress{
+    background-color: #fff2d7;
+    color: #ffa705;
+}
+
+.confirmed{
+    background-color: #d7effc;
+    color: #15a1fe;
+}
+
+.fulfilled{
+    background-color: #dcedde;
+    color: #37aa38;
+}
+
+.customer-wrapper{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.4fr;
+    grid-auto-flow: column;
+    margin:10px 0;
+    min-width: 230px;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.customer-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer-name > p ,
+.customer-date {
+    font-size: 0.9rem;
+}
+
+.customer-date{
+    text-align: right;
+    color: #9092a9;
+}
+
+/* Make Responsive */
+    @media screen and (max-width : 980px){
+        .dashboard-container{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "total1 total2"
+            "total3 total4"
+            "detail detail"
+            "customer customer"; 
+        }
+    }
+    @media screen and (max-width : 480px){
+        .profile-name{
+            display: none;
+        }
+        .sidebar{
+            display: none;
+        }
+        main{
+            padding: 6rem 2rem 2rem 2rem;
+        }
+        #toggle:checked ~ .sidebar {
+            width: 200px;
+            display: block;
+        }
+
+        #toggle:checked ~ .sidebar .sidebar-menu > p {
+            display: block;
+        }
+
+        #toggle:checked ~ main{
+            padding: 6rem 2rem 2rem 2rem;
+        }
+        .dashboard-container{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "total1"
+            "total2"
+            "total3"
+            "total4"
+            "detail"
+            "customer";
+        }
+        .detail table {
+            font-size: 0.9rem;
+        }
+    }
+/* Make Responsive */
+.dropdown-btn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-bottom:2px;
+    border-bottom: 2px solid #0b6885;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+.dropdown-btnn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color:white;
+    margin-bottom:7px;
+    display: block;
+    border: none;
+    border-radius:20px;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+.text-dr{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+
+    color: white;
+    display: block;
+    border: none;
+    border-radius:20px;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+.text-dropdown{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+
+    color:  #10a5d3;
+    display: block;
+    border: none;
+    font-weight: bold;
+    border-radius:20px;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+.text-dropdown:hover{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+
+    color: #2d2d2d;
+    display: block;
+    border: none;
+    font-weight: bold;
+    border-radius:20px;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+.text-dp{
+    padding: 5px 10px ;
+    text-decoration: none;
+
+    color: grey;
+    display: block;
+    border: none;
+    border-radius:20px;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.dropdown-ct {
+    display: none;
+    background-color:  white ;
+    color:  #10a5d3;
+    border-bottom: 2px solid #0b6885;
+    padding-left: 8px;
+    font-family: "Poppins", sans-serif;
+    }
+  
+    .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    }
+  
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+/* On mouse-over */
+.text-dr:hover,  .dropdown-btn:hover {
+color:white;
+font-weight: 500;
+font-family: "Poppins", sans-serif;
+text-decoration:none;
+}
+.stikers {
+  color: white;
+  width: 50px;
+  height: 26px;
+  padding: 5px;
+  background-color:#10a5d3  ;
+  font-size: 11px;
+  text-align: center;
+  border-top-right-radius: 50px  ;
+  border-bottom-right-radius: 50px  ;
+}

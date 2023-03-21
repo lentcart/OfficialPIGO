@@ -1,0 +1,1526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  top: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  font-size: 13px !important;
+}
+.container{
+  margin: 10px 20px 10px 20px; 
+  position: inherit;
+  block-size: fit-content;
+}
+/*LOGIN*/
+.cont-login{
+	margin-top: 10px auto 0;
+	width: 100%;
+	max-width: 525px;
+	min-height: 350px;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background-image: linear-gradient( #ffffff73 , rgba(55, 195, 230, 0.411));
+  box-shadow: 0 2px 15px 0 rgba(29, 29, 29, 0.2), 0 6px 20px 0 rgba(19, 19, 19, 0.19);
+}
+.txt-judul-login{
+  color:rgba(55, 195, 230, 0.61);
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(23, 141, 170, 0.993);
+}
+.f-loginn {
+  padding: 8px;
+  width: 88%;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background-color:white; 
+  border-radius:20px;
+}
+/*LOGIN*/
+a{
+  text-decoration: none;
+  color: #2d2d2d;
+}
+.line{
+  border-bottom: 2px solid #2d2d2d;
+}
+.cont-laporan{
+  margin:5rem;
+  padding: 10px 10px 10px 10px;
+
+}
+.inp-lap{
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.btn-text{
+  border: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+ .sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 6rem;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  overflow-x: auto;
+  padding-top: 20px;
+  }
+  /* Style the sidenav links and the dropdown button */
+
+  .dropdown-btn{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: #eeeeee;
+      margin-bottom:2px;
+      border-bottom: 2px solid #0b6885;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      outline: none;
+  }
+  .dropdown-btnn{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color:white;
+      margin-bottom:7px;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      outline: none;
+  }
+  .text-dr{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+  
+      color: white;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      
+  }
+  .text-dropdown{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      color:  #10a5d3;
+      display: block;
+      border: none;
+      font-weight: 600;
+      font-size:12px;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      
+  }
+  .text-dropdown:hover{
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+  
+      color: #2d2d2d;
+      display: block;
+      border: none;
+      font-weight: bold;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      
+  }
+  .text-dp{
+      padding: 5px 10px ;
+      text-decoration: none;
+  
+      color: grey;
+      display: block;
+      border: none;
+      border-radius:20px;
+      background: none;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      
+  }
+
+  /* On mouse-over */
+  .text-dr:hover,  .dropdown-btn:hover {
+  color:black;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-decoration:none;
+  }
+  tr:hover{
+    background-color: #10a5d3;
+    color: white;
+  }
+  .stikers {
+    color: white;
+    width: 50px;
+    height: 26px;
+    padding: 5px;
+    background-color:#0885ac  ;
+    font-size: 11px;
+    text-align: center;
+    border-top-right-radius: 50px  ;
+    border-bottom-right-radius: 50px  ;
+  }
+  .cont-daftar-permintaan{
+    height: 6rem;
+    padding: 2px 5px;
+  }
+  /* Main content */
+  .main {
+  margin-left: 180px;
+  font-size: 20px;
+  padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  background-color: red;
+  }
+
+
+  .dropdown-ct {
+  display: none;
+  background-color:  white ;
+  color:  #10a5d3;
+  border-bottom: 2px solid #0b6885;
+  padding-left: 8px;
+  font-family: "Poppins", sans-serif;
+  }
+
+  .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  }
+
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+
+  .ct {
+  max-width: 100%;
+  padding: 10px;
+  }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #10a5d3;
+}
+.txt-side {
+  font: 13px;
+  color: white;
+}
+.side {
+  background-color: #10a5d3;
+  margin-top: 1rem;
+  margin-left: 15px;
+  border-radius: 10px;
+  border: 1px solid #10a5d3 ;
+  padding: 10px 20px;
+  color: white;
+  width: 15rem;
+  height: 41.5rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.main-body {
+  background-color: white;
+  margin-top: 1px;
+  margin-left: 17rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  width: 67rem;
+  height: 42.5rem;
+  position: fixed;
+  z-index: 1;
+}
+.judul-side {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.icon-media {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 3px;
+  padding: 10px 20px;
+  position: absolute;
+}
+/* Button */
+.btn-laporan {
+  width: 10rem;
+  background-color: #10a5d3 ;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  height: 4rem;
+  border: 1px solid #10a5d3 ;
+  border-radius: 10px;
+}
+/* Button */
+.tx-card {
+  width: 9rem;
+  font-size: 13px;
+  border: none;
+}
+.prtampil {
+  display: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  resize: none;
+}
+.hg-card {
+  width: 9rem;
+  font-size: 13px;
+  border: none;
+  color: red;
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgb(202, 202, 202);
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(231, 231, 231);
+  border-radius: 10px;
+  height: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 197, 197);
+}
+
+
+/* Produk-Info*/
+.txt-produk-info{
+  font-size: 11px;
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.btn-produkinfo{
+  padding: 5px 2px;
+  background-color: #10a5d3;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.btn-produkinfo:hover{
+  padding: 5px 2px;
+  background-color: #10a5d3;
+  color: #2d2d2d;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.cont-produk{
+  padding: 5px 5px;
+  background-color:#eee;
+  border-radius: 5px;
+}
+.cont-data-produk{
+  padding: 10px 10px;
+  height: 28rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* Produk-Info*/
+
+/* Produk-Baru*/
+.judul-Pdbaru{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+}
+.produk-baru{
+  padding: 10px 15px;
+  background-color: white;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+  border-radius: 10px;
+}
+.gambar-produk{
+  width:7rem; 
+  padding:10px 10px; 
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19); 
+  border-radius:20px;
+  margin-left: 10px;
+}
+.txt-pb-judul{
+  font-size: 14px;
+  color: #2d2d2d;
+  font-weight: bold;
+
+}
+.btn-produk-baru{
+  border:none;
+  background-color: #eeeeee;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+.txt-produk-baru{
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.inp-produk-baru{
+  padding:2px 5px;
+  color: #2d2d2d;
+  font-weight: 500;
+  border: 1px solid #727272;
+  width: 28rem;
+}
+.textarea-produkbaru{
+  height: 3rem;
+  width: 28rem;
+}
+.label-pb{
+  background-color: #eeeeee;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.label-vol{
+  background-color:#eeeeee;
+  font-weight: bold;
+  width: 5rem;
+  border: none;
+  padding: 4px 5px;
+  margin-left: 5px;
+  height: 10rem;
+}
+.cek-produkbaru{
+  padding: 2px 10px;
+  background-color: #aaa;
+  color: #2d2d2d;
+  font-weight: bold;
+  border-radius:5px;
+
+}
+.cek-produkbaru:hover{
+  padding: 2px 10px;
+  background-color: #10a5d3;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+
+}
+/* Produk-Baru*/
+
+/* Up Produk*/
+  /* Modal*/
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+    }
+
+    .modal-body {padding: 2px 16px;}
+
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+    }
+  /* Modal*/
+/* Up Produk*/
+
+/* Supplier */
+.judul-supplier{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+}
+.supplier-baru{
+  padding: 10px 15px;
+  background-color: white;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+  border-radius: 10px;
+}
+.txt-supplier-judul{
+  font-size: 14px;
+  color: #2d2d2d;
+  font-weight: bold;
+
+}
+.btn-supplier-baru{
+  border:none;
+  background-color: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius:10px;
+}
+.btn-supplier-baru:hover{
+  color:#2d2d2d;
+  background-color:#0ec4fc;
+}
+.txt-supplier-baru{
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.inp-supplier-baru{
+  padding:2px 5px;
+  color: #2d2d2d;
+  font-weight: 500;
+  border: 1px solid #727272;
+  width: 100%;
+}
+.label-sp{
+  background-color: #dfdfdf;
+  padding: 4px 4px;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* Supplier */
+
+/* Purchase Order*/
+  .judul-PO{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border-bottom: 2px solid #727272;
+  }
+  .label-JatuhTempo{
+    background-color: #d60b0b;
+    color: white;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+    
+  }
+  .label-stpo0{
+    background-color: #df9375;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+    
+  }
+  .label-stpo1{
+    background-color: #7bd37b;;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+  }
+  .label-stpo2{
+    background-color: #65bde6;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+  }
+  .label-stpo3{
+    background-color: #7865e6;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+  }
+  .label-stpo4{
+    background-color: #791d1d;
+    color: white;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    padding:2px 5px;
+  }
+  .btn-cetak-po{
+    border:none;
+    background-color: #eeeeee;
+    color: #2d2d2d;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    width:100%;
+  }
+  .btn-cetak-po:hover{
+    border:none;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    width:100%;
+  }
+  .btn-tambah-po{
+    border:none;
+    background-color: none;
+    color: #2d2d2d;
+
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius:10px;
+  }
+  .btn-tambah-po:hover{
+    background-color: #10a5d3;
+    color: white;
+  }
+  .txt-po-judul{
+    font-size: 14px;
+    color: #2d2d2d;
+    font-weight: bold;
+
+  }
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .purchase-order{
+    padding: 10px 15px;
+    background-color: white;
+  }
+  .txt-purchase-order{
+
+    color: #2d2d2d;
+    font-weight: 500;
+  }
+  .inp-purchase-order{
+
+    padding:2px 5px;
+    color: #2d2d2d;
+    font-weight: 550;
+    border: 1px solid #727272;
+    width: 100%;
+  }
+  .btn-purchase-order{
+    border:none;
+    background-color: none;
+    color: #2d2d2d;
+
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 10rem;
+  }
+  textarea{
+    height: 5rem;
+  }
+  .label-po{
+    background-color:#c7c7c7;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .btn-tambah-produk{
+    border:none;
+    color: #2d2d2d;
+
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    padding: 5px 15px;
+  }
+  .btn-tambah-produk:hover{
+    border:none;
+    color:#10a5d3;
+
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    padding: 5px 15px;
+  }
+  .data-po{
+    background-color: white;
+    box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  .dp-btn{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom:7px;
+    display: block;
+    border: none;
+    background-color: #eeeeee;
+    border-radius:20px;
+    background: none;
+    font-family: "Poppins";
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modall-content {
+    position: relative;
+    top:5px;
+    border-radius:10px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .txt-modal-judul{
+    font-size: 13px;
+    color: #2d2d2d;
+    font-weight: bold;
+  }
+  .txt-modal-desc{
+
+    color: #2d2d2d;
+    font-weight: bold;
+  }
+  .btn-konfirmasi{
+    border:none;
+    background-color: rgb(206, 206, 206);
+    border-radius:10px;
+    font-size: 11px;
+    color:#2d2d2d;
+    font-weight: bold;
+  }
+  .btn-konfirmasi:hover{
+    border:none;
+    background-color: #9debfb;
+    border-radius:10px;
+    font-size: 11px;
+    color:#2d2d2d;
+    font-weight: bold;
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: #eee;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #eee;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modall-header {
+    padding: 10px 15px;
+
+    background-color: white;
+    color: black;
+    border-radius:10px;
+  }
+
+  .modall-body {
+    padding:2px 5px;
+  }
+
+  .modall-footer {
+    padding: 10px 15px;
+    background-color: white;
+    font-size:12px;
+    color: black;
+    border-radius:10px;
+  }
+  .popover__title {
+    font-size: 24px;
+    line-height: 100px;
+    text-decoration: none;
+    color: red;
+}
+
+  .popover__wrapper {
+    position: relative;
+    margin-top: 0px;
+    display: inline-block;
+    background-color: red;
+  }
+  .popover__content {
+    opacity: 0;
+    height:10rem; 
+    visibility: hidden;
+    position: absolute;
+    background-color: #b9b9b9;
+    margin-top:-4.5rem;
+    left:2.5rem;
+    transform: translate(0, 10px);
+    padding: 5px 5px ;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width:16rem;
+  }
+  .popover-cont-body{
+  height:9.5rem;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color: yellow;
+  }
+  .popover__content:before {
+    position: absolute;
+    z-index: 999;
+    width:4.5rem;
+    content: "";
+    background-color: green;
+    right: calc(4% - 14px);
+    top: -10px;
+    border-style: solid;
+    border-width: 0 0px 10px 0px;
+    border-color: transparent transparent white transparent;
+    transition-duration: 0.10s;
+  }
+  .popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .popover__message {
+    text-align: center;
+    font-size:12px;
+    font-weight:bold;
+  }
+  .calculator {
+    padding: 5px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    }
+#kalkulator{
+  display: none;
+}
+
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 25px;
+    padding-right: 15px;
+    padding-top: 2px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 12px;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+    .input:hover {
+    border: 1px solid #bbb;
+    background-color:red;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 55px;
+  text-align: center;
+  height:100%;
+  padding: 0px;
+  margin-top: 2px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operators div:hover {
+background-color: #ddd;
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+border-color: #aaa;
+}
+
+.operators div:active {
+font-weight: bold;
+}
+
+.leftPanel {
+display: inline-block;
+}
+
+.numbers div {
+display: inline-block;
+border: 1px solid #ddd;
+border-radius: 1px;
+width: 55px;
+text-align: center;
+padding: 1px;
+margin-top:1px;
+cursor: pointer;
+background-color: #f9f9f9;
+transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numbers div:hover {
+background-color: #f1f1f1;
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+border-color: #bbb;
+}
+
+.numbers div:active {
+font-weight: bold;
+}
+
+div.equal {
+display: inline-block;
+border: 1px solid #3079ED;
+border-radius: 1px;
+width: 55px;
+text-align: center;
+padding:37px 5px;
+margin-top:1px;
+vertical-align: top;
+cursor: pointer;
+color: #FFF;
+background-color: #4d90fe;
+transition: all .2s ease-in-out;
+}
+
+div.equal:hover {
+background-color: #307CF9;
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+border-color: #1857BB;
+}
+
+div.equal:active {
+font-weight: bold;
+}
+
+/* Purchase Order*/
+
+/*Permintaan*/
+.cont-permintaanbaru{
+  padding: 5px 10px;
+  background-color: none;
+}
+.cont-perm-produk{
+  background-color:none; 
+  height:9.4rem;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+/*Permintaan*/
+/*Penawaran*/
+
+.cont-produk-permintaan{
+  background-color: #10a5d3;
+  padding: 2px 10px;
+  height: 16.5rem;
+}
+.cont-table-pr{
+  padding: 2px 10px;
+  height: 9.4rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/*Penawaran*/
+
+/* Payment Request */
+.cont-material-rp{
+  background-color: #f3f2f2;
+  padding: 2px 15px;
+}
+.judul-PR{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border-bottom: 2px solid #727272;
+}
+.label-pr1{
+  background-color: #641f1f;;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+.label-pr2{
+  background-color: #8beba3;;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 3px 10px;
+}
+.btn-cetak-pr{
+  border:none;
+  background-color: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 8rem;
+}
+.txt-pr-judul{
+  font-size: 14px;
+  color: #2d2d2d;
+  font-weight: bold;
+
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.payment-request{
+  padding: 10px 15px;
+  background-color: white;
+}
+.txt-payment-request{
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.inp-payment-request{
+  padding:2px 5px;
+  color: #2d2d2d;
+  font-weight: 500;
+  border: 1px solid #727272;
+  width: 100%;
+}
+.btn-payment-request{
+  border:none;
+  background-color: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 10rem;
+}
+textarea{
+  height: 5rem;
+}
+.btn-tambah-produk{
+  border:none;
+  color: #2d2d2d;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #dfdfdf;
+  padding: 5px 15px;
+}
+.btn-tambah-produk:hover{
+  border:none;
+  color:#10a5d3;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #dfdfdf;
+  padding: 5px 15px;
+}
+/* Payment Request */
+
+/* Laporan */
+.penjualan{
+  background-color: #ffffff;
+}
+.lap-penjualan{
+  box-shadow: 0 4px 8px 4px rgba(43, 43, 43, 0.2), 0 3px 5px 0 rgba(75, 75, 75, 0.19);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.inp-penjualan-cari{
+  width: 30rem;
+  border:1px solid #505050;
+  border-radius: 10px;
+  padding:  2px 10px;
+}
+  input:disabled {
+  background: #10a5d3;
+  color:white;
+  }
+  select:disabled, option:disabled {
+  background: #10a5d3;
+  color:white;
+  }
+  input:read-only {
+  background: #10a5d3;
+  color:white;
+  }
+  option:disabled {
+  background: rgb(104, 30, 30);
+  }
+.txt-judul{
+  font-size: 13px;
+  font-weight: bold;
+  color:#2d2d2d;
+  font-family: "Poppins", sans-serif;
+}
+.txt-desc{
+  font-weight: bold;
+  color:#2d2d2d;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.tb-transaksi{
+  font-family: "Poppins", sans-serif;
+  
+}
+.txt-desc{
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+div.c {
+  text-align: right;
+}
+.invoice {
+  background-color: #eeeeee;
+  width: 970px !important;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+.invoice-header {
+  padding:10px;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+}
+.txt-a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+.txt-judul{
+  font-size: 16px;
+  align-items: center;
+  font-weight:bold;
+  font-family: "Poppins", sans-serif;
+}
+.btn-sp{
+  font-size: 11px;
+  color:rgb(70, 69, 69);
+  background-color: white;
+  border: none;
+  width: 10rem;
+  padding: 5px 10px;
+  text-align: left !important;
+  font-family: "Poppins", sans-serif;
+}
+.btn-sp:hover{
+  font-size: 11px;
+  color:rgb(0, 168, 219);
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  width: 10rem;
+  padding: 5px 10px;
+  text-align: left !important;
+  font-family: "Poppins", sans-serif;
+}
+.media-body {
+  font-size: 0.9em;
+  margin: 0;
+}
+.sr {
+  background-color: rgb(0, 168, 219);
+  border: none;
+}
+.invoice-body {
+  background: #eeeeee;
+}
+.invoice-footer {
+  padding: 15px;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #999;
+}
+.btn-download-lap{
+  border:2px solid #eee;
+  background-color: #eee;
+  color: #2d2d2d;
+  font-weight: bold;
+  border-radius:10px
+}
+.btn-download-lap:hover{
+  border:2px solid rgb(0, 168, 219);
+  background-color: rgb(0, 168, 219);;
+  color: white;
+  font-weight: bold;
+  border-radius:10px
+}
+/* Laporan */
+
+/* Loader Page */
+.loader {
+  width:50px;
+  height:50px;
+  display:inline-block;
+  padding:0px;
+  opacity:0.5;
+  border:3px solid #09acfd;
+  -webkit-animation: loader 1s ease-in-out infinite alternate;
+  animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader1 {
+  display:inline-block;
+  font-size:0px;
+  padding:0px;
+}
+.loader1 span {
+  vertical-align:middle;
+  border-radius:100%;
+  
+  display:inline-block;
+  width:12px;
+  height:12px;
+  margin:3px 2px;
+  -webkit-animation:loader1 0.8s linear infinite alternate;
+  animation:loader1 0.8s linear infinite alternate;
+}
+.loader1 span:nth-child(1) {
+  -webkit-animation-delay:-1s;
+  animation-delay:1s;
+  background:#0b6885;
+}
+.loader1 span:nth-child(2) {
+  -webkit-animation-delay:-0.8s;
+  animation-delay:-0.8s;
+  background:#10a5d3
+}
+.loader1 span:nth-child(3) {
+  -webkit-animation-delay:-0.26666s;
+  animation-delay:-0.26666s;
+  background:#09acfd
+}
+.loader1 span:nth-child(4) {
+  -webkit-animation-delay:-0.8s;
+  animation-delay:-0.8s;
+  background:#10a5d3
+ 
+}
+.loader1 span:nth-child(5) {
+  -webkit-animation-delay:-1s;
+  animation-delay:-1s;
+  background:#0b6885;
+}
+
+@keyframes loader1 {
+  from {transform: scale(0, 0);}
+  to {transform: scale(1, 1);}
+}
+@-webkit-keyframes loader1 {
+  from {-webkit-transform: scale(0, 0);}
+  to {-webkit-transform: scale(1, 1);}
+}
+/* Loader Page */
+
+/* GL-LIST-KAS */
+.judul-GL-List{
+  background-color: #d4d4d4;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+}
+.GL-List{
+  padding: 10px 15px;
+  background-color: white;
+  box-shadow: 0 2px 3px 0 rgba(10, 10, 10, 0.2),0 6px 20px 0 rgba(175, 175, 175, 0.19);
+  border-radius: 10px;
+}
+.txt-GL-List{
+  font-size: 14px;
+  color: #2d2d2d;
+  font-weight: bold;
+
+}
+input:focus,input:hover, select:hover,select:focus, textarea:focus{
+  background-color: #94e6ff;
+  color: black;
+}
+input:hover{
+  background-color: #94e6ff;
+  color: black;
+}
+.txt-GL-List-Desc{
+  font-size: 12px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+.btn-GL-List{
+  border:none;
+  background-color: #eeeeee;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+.txt-GL-List{
+  color: #2d2d2d;
+  font-weight: 500;
+}
+.inp-GL-List{
+  padding:2px 5px;
+  color: #2d2d2d;
+  font-weight: 500;
+  border: 1px solid #727272;
+  width: 28rem;
+}
+/* The Modal (background) */
+.modal-GL {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-GL {
+  position: relative;
+  top:-50px;
+  border-radius:10px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.txt-modal-judul{
+  font-size: 13px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+.txt-modal-desc{
+  font-size: 12px;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+.btn-konfirmasi{
+  border:none;
+  background-color: rgb(206, 206, 206);
+  border-radius:10px;
+  font-size: 11px;
+  color:#2d2d2d;
+  font-weight: bold;
+}
+.btn-konfirmasi:hover{
+  border:none;
+  background-color: #9debfb;
+  border-radius:10px;
+  font-size: 11px;
+  color:#2d2d2d;
+  font-weight: bold;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close-GL {
+  color: #eee;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-GL:hover,
+.close-GL:focus {
+  color: #eee;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header-GL {
+  padding: 10px 15px;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+  border-radius:10px;
+}
+
+.modal-body-GL {padding:5px 15px;}
+
+.modal-footer-GL {
+  padding: 10px 15px;
+  background-color: white;
+  font-size:12px;
+  color: black;
+  border-radius:10px;
+}
+.gl-update{
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.gl-update:hover{
+  color:#10a5d3;
+  font-weight: bold;
+}
+.Update-GL-Cont{
+  height:25rem; 
+  overflow:scroll;
+  overflow-x:hidden;
+}
+.Table-List-ACID{
+  height:8rem; 
+  overflow:scroll; 
+  background:#07abdd; 
+  overflow-x:hidden;
+}
+#cont-up-k{
+  height:8rem; 
+  overflow:scroll; 
+  background:#10a5d3; 
+  overflow-x:hidden;
+}
+/* GL-LIST-KAS */
+
+/* SWALL */
+.swal2-popup {
+  font-size: 12px !important;
+  width: 25rem !important;
+}
+
+/* SWALL */
+
+
+

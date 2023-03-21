@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  top: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  font-size: 14px;
+}
+
+.header {
+  background: #0dcaf0;
+  width: 100%;
+  color: #ffffff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.admin {
+  margin: 20px;
+  padding: 0;
+  z-index: 999;
+}
+.text-judul {
+  color: white;
+  font-size: 35px;
+  font-family: monospace;
+}
+.bd-admin {
+  background-color: white;
+  height: 100%;
+  width: 64rem;
+  position: fixed;
+  overflow: auto;
+}
+
+.accordion-button-admin {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  background-color: #0dcaf0;
+  border: 1px solid white;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
+.accordion-item-admin {
+  background-color: white;
+}

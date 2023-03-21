@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+/*header*/
+.header {
+    background: #0dcaf0;
+    margin: 0;
+    width: 100%;
+
+    color: #fcfcfc;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.body {
+    background: #ffffff;
+}
+
+.judul-bantuan {
+    font-size: 40px;
+}
+
+.navigasi {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.bar-bantuan {
+    color: red;
+}
+
+.form-control {
+    width: 700px;
+    height: 45px;
+    font-size: 14px;
+    justify-items: center;
+}
+
+.navigasi ol {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.navigasi li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.btn-bantuan {
+    width: 200px;
+    height: 50px;
+    background-color: #0dcaf0;
+    position: center;
+    color: white
+}
+
+.bdr {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 60px;
+    border: 5px solid #fafafa;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.bdrr {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 100px;
+    border: 5px solid #fafafa;
+    margin: 20px;
+}
+
+/* Produk*/
+
+.judul-produk {
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.produk a {
+    text-decoration: none;
+    color: black;
+}
+
+.h5 {
+    margin-top: 0;
+}
+
+.price-produk {
+    font-weight: 765;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.card-produk {
+    padding: 5px;
+}
+
+.card-title {
+    font-size: 12px;
+}
+
+.rating .terjual {
+    text-align: right;
+}
+
+.card-img-top {
+    width: auto;
+    height: 140px;
+}
+
+.lainnya {
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    background-color: #0dcaf0;
+
+}
+
+.lainnya1 {
+    margin: 0px;
+}
+
+.produkk {
+    color: #000099;
+}
+
+.produkk:nth-child(1) {
+    display: block;
+}
+
+.produkk:nth-child(2) {
+    display: block;
+}
+
+.terjual {
+    font-size: 11px;
+    border: 0px;
+}
+
+#label-go {
+    margin-left: 100px;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    color: white;
+    width: 80px;
+    padding: 5px;
+    margin: 0;
+    background-color: #1925ca;
+    font-size: 10px;
+    text-align: center;
+}
+
+#label-cb {
+    margin-left: 100px;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    color: rgb(255, 5, 5);
+    width: 75px;
+    height: 25px;
+    padding: 5px;
+    margin: 0;
+    background-color: #fbff00;
+    font-size: 11px;
+    text-align: center;
+}
+
+#label-event {
+    margin-left: 100px;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    background-color: red;
+    color: white;
+    width: 30px;
+    padding: 5px;
+    margin: 0;
+    background-color: #eb2f2f;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* Produk*/
+
+/*footer*/
+.footer {
+    margin-top: 20px;
+}
+
+.help {
+    border-top: 3px solid #0dcaf0;
+    top: 10px;
+    position: relative;
+    background-color: rgb(248, 249, 250);
+    font-size: 12px;
+}
+
+.help p {
+    font-weight: 600;
+}
+
+.help a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+
+
+.help a:hover {
+    color: #0dcaf0;
+}
+
+
+/*footer*/
+
+/*popup-chat*/
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    padding: 6px 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    width: 90px;
+    z-index: 5;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 24px;
+}
+
+#chat {
+    width: 25px;
+    height: 25px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99999;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: #0dcaf0;
+    border-radius: 20px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    resize: none;
+    min-height: 150px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #0a58ca;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    width: 110px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/*popup-chat*/
+
+
+/*pop Up iklan*/
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.popbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+.pop-content {
+    width: 400px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    z-index: 2;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .5);
+}
+
+.popcontent {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.pop-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .6)
+}
+
+.popbox-close-button {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    top: -25px;
+    right: -25px;
+    background-color: #fff;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, .2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0;
+    display: inline-block;
+}
+
+.popcontent img {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.flowbox {
+    position: relative;
+    overflow: hidden
+}
+
+@media screen and (max-width:840px) {
+    .pop-content {
+        width: 300px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        margin: -75px 0 0 -150px;
+
+    }
+
+
+}
+
+/*pop Up iklan*/
+
+
+
+/*Responsive*/
+@media screen and (min-width: 1200px) {
+    .search .row {
+        justify-content: center;
+    }
+
+    .bar {
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .cart {
+        margin-left: 30px;
+
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav .navbar {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .header-font {
+        display: none;
+    }
+
+    .icon-media {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .bar {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .navbar-nav {
+        text-align: start;
+    }
+
+    .carousel-inner {
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar-nav {
+        text-align: start;
+    }
+
+    .carousel-inner {
+        position: relative;
+    }
+
+    .help {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    /* flashsale*/
+
+    .card {
+        max-width: 200px;
+    }
+
+    .progress img {
+        left: -15px;
+        top: 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .diskon-fl {
+        max-width: 25px;
+        max-height: auto;
+        right: -90px;
+
+    }
+
+    .diskon-fl>span {
+        font-size: 10px;
+    }
+
+    .image-fl>img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+
+    .price-fl span {
+        font-size: 12px;
+    }
+
+    .progress span {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 420px) {
+
+    .logo {
+        width: 75px;
+    }
+
+
+
+    .navbar .a {
+        margin: 3px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .carousel-inner {
+        position: relative;
+    }
+
+
+
+    .bar ::placeholder {
+        font-size: 12px;
+    }
+
+    .logo {
+        padding: 0;
+        width: 75px;
+    }
+
+    .bar {
+        margin: 0;
+        margin-right: 2px;
+    }
+
+    .footer span {
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+/*Responsive*/

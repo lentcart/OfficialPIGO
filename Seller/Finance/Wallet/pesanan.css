@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    top: 0;
+    background-color: none ;
+}
+.sidenav {
+    height: 85%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 4rem;
+    left: 0;
+    font-family: "Poppins";
+    background-color: white;
+    overflow-x: auto;
+    padding-top: 20px;
+}
+
+.main {
+    margin-left: 200px;
+    font-size: 20px; 
+    padding: 0px 10px;
+    font-family: "Poppins";
+    padding-top: 20px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.ct {
+    max-width: 100%;
+    padding: 10px;
+}
+.cont-form{
+    padding:2px 5px;
+    color: #2d2d2d;
+    font-size: 13px;
+    font-weight: 550;
+    border: 1px solid #727272;
+    width: 100%;
+}
+/*chat*/
+    .open-button-seller {
+        background-color: #0dcaf0;
+        padding: 6px 6px;
+        font-size: 12px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 20px;
+        right: 5px;
+        width: 150px;
+        z-index: 5;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        margin-right: 24px;
+    }
+
+    .open-button-seller:hover{
+        font-weight: bold;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 99999;
+    }
+    
+    .form-container {
+        max-width: 250px;
+        padding: 10px;
+        background-color: #0dcaf0;
+        border-radius: 20px;
+    }
+
+    .form-container textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: white;
+        resize: none;
+        min-height: 150px;
+    }
+
+    .form-container textarea:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    .form-container .btn {
+        background-color: #0a58ca;
+        color: white;
+        padding: 15px 15px;
+        border: none;
+        cursor: pointer;
+        width: 110px;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    .btn-lainnya {
+        width: 9rem;
+        height: 30px;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: #0dcaf0;
+        color: white;
+        border: none;
+        margin-left: 45%;
+    }
+
+    .btn-lg {
+        width: 10rem;
+        color: #0dcaf0;
+        background-color: #eeeeee;
+        font-weight: bold;
+        font-size: 14px;
+        border: 1px solid #eeeeee;
+    }
+
+    .btn-lgg {
+        color:#eeeeee;
+        background-color: #0dcaf0;
+        font-weight: bold;
+        font-size: 12px;
+        border: 1px solid #0dcaf0;
+        margin-top:3px;
+        padding:5px;
+        position: left;
+    }
+
+    .btn-cust {
+        color:#eeeeee;
+        background-color: #0dcaf0;
+        font-weight: bold;
+        font-size: 12px;
+        border: none;
+        position: left;
+    }
+
+    .dropdown-item{
+        font-size: 12px;
+    }
+
+    .btn-rg {
+        width: 5rem;
+        color: #0dcaf0;
+        font-weight: bold;
+        font-size: 12px;
+        border: none;
+    }
+
+    .form-container .cancel {
+        background-color: red;
+    }
+
+    .form-container .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
+/*chat*/
+
+    
+

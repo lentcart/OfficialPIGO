@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  top: 0;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #2d2d2d;
+  font-size: 14px;
+}
+
+/*Customer*/
+
+  /*Rekening*/
+
+    /*Header-Rek*/
+      .hd-rek{
+        padding: 20px 20px;
+        margin-top: 6rem;
+      }
+    /*Header-Rek*/
+    
+    /*Body-Rek*/
+      .bd-rek{
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      input{
+        border: none;
+        background-color: none;
+      }
+      .text-judul-rk {
+        font-size: 20px;
+        margin-top: 10px;
+        color: #2d2d2d;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+      }
+      .text-desc-pr {
+        font-size: 10px;
+        color: #2d2d2d;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+      .div-rk{
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(196, 196, 196, 0.2), 0 6px 20px 0 rgba(218, 218, 218, 0.19);
+        padding: 20px 20px;
+      }
+      .card-rek {
+        width:10.5rem; 
+        background-color:white; 
+        border-radius:20px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(196, 196, 196, 0.2), 0 6px 20px 0 rgba(218, 218, 218, 0.19);
+        
+      }
+      .card-rek:hover{
+        box-shadow:currentColor;
+        color:#0dcaf0;
+        box-shadow: 0 2px 8px 0 rgba(19, 19, 19, 0.2), 0 6px 20px 0 rgba(34, 34, 34, 0.19);
+      }
+      .logo-rek{
+        width: 50px;
+        height: 50px;
+      }
+    /*Body-Cust*/
+
+    /*Button-Dropdown*/
+      .dropdown-btn{
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 14px;
+          color: #2d2d2d;
+          font-weight: 500;
+          margin-bottom:7px;
+          display: block;
+          border: none;
+          border-radius:20px;
+          background: none;
+          font-family: "Poppins";
+          width: 100%;
+          text-align: left;
+          cursor: pointer;
+          outline: none;
+      }
+      .text-dr{
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 12px;
+          color: #2d2d2d;
+          display: block;
+          border: none;
+          border-radius:20px;
+          background: none;
+          font-family: "Poppins";
+          width: 100%;
+          text-align: left;
+          cursor: pointer;
+          outline: none;
+      }
+
+      .text-dr:hover, .dropdown-btn:hover {
+        color: #0dcaf0;
+        font-family: "Poppins";
+        text-decoration:none;
+      }
+
+      .dropdown-ct {
+        display: none;
+        color: #2d2d2d;
+        font-weight: 500;
+        background-color: none;
+        padding-left: 8px;
+        font-family: "Poppins";
+      }
+
+      .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    /*Button-Dropdown*/
+
+    /*Modal-Update-Data*/
+      .form-updatedata {
+        font-size: 14px;
+        width: 23rem;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        height: 28px;
+        justify-items: left;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+        color: #2d2d2d;
+        box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.2), 0 2px 5px 0 rgba(100, 100, 100, 0.19);
+      }
+      .form-update {
+        font-size: 14px;
+        width: 23rem;
+        border: 2px solid rgb(172, 125, 125);
+        border-radius: 5px;
+        padding: 10px 10px;
+        height: 28px;
+        justify-items: left;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+        color: #2d2d2d;
+        box-shadow: 0 4px 8px 0 rgba(34, 34, 34, 0.2), 0 2px 5px 0 rgba(100, 100, 100, 0.19);
+      }
+      .text-updatedata {
+        font-size: 15px;
+        color: #2d2d2d;
+      }
+      .modalud-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        font-size: 14px;
+        padding: 0;
+        border: 1px solid #888;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        font-family: "Poppins", sans-serif;
+        border-radius: 20px;
+      }
+      .modalud {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        font-size: 14px;
+        padding-top:10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(49, 49, 49);
+        background-color: rgba(0, 0, 0, 0.4);
+        font-family: "Poppins", sans-serif;
+      }
+      .modalud-header {
+        padding: 20px 20px;
+        background-color: white;
+        font-size: 14px;
+        color: #0dcaf0;
+        border-radius: 20px;
+      }
+      .modalud-body {
+        padding: 2px 16px;
+        font-size: 14px;
+      }
+      
+      .modalud-footer {
+        padding: 20px 20px;
+        background-color: white;
+        font-size: 14px;
+        color: #0dcaf0;
+        border-radius: 20px;
+      }
+      .close {
+        color: rgb(219, 219, 219);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    /*Modal-Update-Data*/
+
+  /*Rekening*/
+
+  /*Responsive*/
+  @media screen and (min-width: 1200px) {
+    .search .row {
+      justify-content: center;
+    }
+  
+    .bar {
+      margin-left: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .cart {
+      margin-left: 30px;
+    }
+  
+    .nav-item {
+      display: none;
+    }
+  
+    .nav .navbar {
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .header-font {
+      display: none;
+    }
+  
+    .icon-media {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .bar {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  
+    .navbar-nav {
+      text-align: start;
+      justify-content: space-between;
+    }
+  
+    .carousel-inner {
+      position: relative;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+      text-align: start;
+      justify-content: space-between;
+    }
+  
+    .carousel-inner {
+      position: relative;
+    }
+  
+    .help {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    /* flashsale*/
+  
+    .card {
+      max-width: 200px;
+    }
+  
+    .progress img {
+      left: -15px;
+      top: 0;
+      position: relative;
+      z-index: 10;
+    }
+  
+    .diskon-fl {
+      max-width: 25px;
+      max-height: auto;
+      right: -90px;
+    }
+  
+    .diskon-fl > span {
+      font-size: 10px;
+    }
+  
+    .image-fl > img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  
+    .price-fl span {
+      font-size: 12px;
+    }
+  
+    .progress span {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 420px) {
+    .logo {
+      width: 75px;
+    }
+  
+    .navbar .a {
+      margin: 3px;
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .carousel-inner {
+      position: relative;
+    }
+  
+    .bar ::placeholder {
+      font-size: 12px;
+    }
+  
+    .logo {
+      padding: 0;
+      width: 75px;
+    }
+  
+    .bar {
+      margin: 0;
+      margin-right: 2px;
+    }
+  
+    .footer span {
+      font-size: 10px;
+    }
+  }
+  
+  /*Responsive*/
+/*Customer*/

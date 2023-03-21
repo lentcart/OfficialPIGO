@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: white;
+  font-family: "Poppins", sans-serif;
+  /* font-size:0.9em !important; */
+}
+a {
+  text-decoration: none;
+  color: #0d2b3f;
+}
+/* Laporan Penjualan */
+  .penjualan{
+    background-color: #ffffff;
+    padding:0px 30px;
+    border-radius: 10px;
+  }
+  .lap-penjualan{
+    box-shadow: 0 4px 8px 4px rgba(43, 43, 43, 0.2), 0 3px 5px 0 rgba(75, 75, 75, 0.19);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 15px;
+  }
+  .inp-penjualan-cari{
+    width: 30rem;
+    border:1px solid #505050;
+    border-radius: 10px;
+    padding:  2px 10px;
+  }
+    input:disabled {
+    background: rgb(184, 214, 224);;
+    }
+    option:disabled {
+    background: rgb(104, 30, 30);
+    }
+  .txt-judul{
+    font-size: 13px;
+    font-weight: bold;
+    color:#2d2d2d;
+    font-family: "Poppins", sans-serif;
+  }
+  .txt-desc{
+    font-size: 12px;
+    font-weight: bold;
+    color:#2d2d2d;
+    font-family: "Poppins", sans-serif;
+  }
+  .tb-transaksi{
+    font-family: "Poppins", sans-serif;
+  }
+  .txt-desc{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    
+
+  }
+  .invoice {
+    background-color: #eeeeee;
+    width: 970px !important;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .invoice-header {
+    padding:10px;
+    border: 2px solid #eeeeee;
+    border-radius: 10px;
+  }
+  .txt-a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+  }
+  .txt-judul{
+    font-size: 16px;
+    align-items: center;
+    font-weight:bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .btn-sp{
+    font-size: 11px;
+    color:rgb(70, 69, 69);
+    background-color: white;
+    border: none;
+    width: 10rem;
+    padding: 5px 10px;
+    text-align: left !important;
+    font-family: "Poppins", sans-serif;
+  }
+  .btn-sp:hover{
+    font-size: 11px;
+    color:rgb(0, 168, 219);
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    width: 10rem;
+    padding: 5px 10px;
+    text-align: left !important;
+    font-family: "Poppins", sans-serif;
+  }
+  .media-body {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .sr {
+    background-color: rgb(0, 168, 219);
+    border: none;
+  }
+  .invoice-body {
+    background: #eeeeee;
+  }
+  .invoice-footer {
+    padding: 15px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #999;
+  }
+  .btn-download-lap{
+    border:2px solid #eee;
+    background-color: #eee;
+    color: #2d2d2d;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius:10px
+  }
+  .btn-download-lap:hover{
+    border:2px solid rgb(0, 168, 219);
+    background-color: rgb(0, 168, 219);;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius:10px
+  }
+/* Laporan Penjualan */
