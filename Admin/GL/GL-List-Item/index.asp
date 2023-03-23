@@ -39,6 +39,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>OFFICIAL PIGO</title>
         <link rel="icon" type="image/x-icon" href="<%=base_url%>/assets/logo/1.png">
 
@@ -71,21 +72,43 @@
             }
             function selectcont(){
                 var cash = document.getElementById("Item_Tipe").value;
+                var cont = "";
+
                 if( cash == "C"){
-                    document.getElementById("cont-cash").style.display = "block";
-                    document.getElementById("cont-tipe").style.display = "none";
-                    document.getElementById("cont-bank").style.display = "none"
+                    var cattipe = "Cash"
+                    cont += `
+                            <span class="cont-text"> Tipe Kategori </span><br>
+                            <select onchange="getCatItem()"  class="  cont-form" name="Item_CatTipe" id="Item_CatTipe" aria-label="Default select example">
+                                <option value="">Pilih</option>
+                                <option value="T"> ${cattipe} Masuk</option>
+                                <option value="K"> ${cattipe} Keluar </option>
+                            </select>
+                        `
+                    document.getElementById("cont-cash").innerHTML = cont ;
                 } else if( cash == "B"){
-                    document.getElementById("cont-bank").style.display = "block"
-                    document.getElementById("cont-tipe").style.display = "none";
-                    document.getElementById("cont-cash").style.display = "none";
+                    var cattipe = "Bank"
+                    cont += `
+                            <span class="cont-text"> Tipe Kategori </span><br>
+                            <select onchange="getCatItem()"  class="  cont-form" name="Item_CatTipe" id="Item_CatTipe" aria-label="Default select example">
+                                <option value="">Pilih</option>
+                                <option value="T"> ${cattipe} Masuk</option>
+                                <option value="K"> ${cattipe} Keluar </option>
+                            </select>
+                        `
+                    document.getElementById("cont-cash").innerHTML = cont ;
                 }else{
-                    document.getElementById("cont-memo").style.display = "block"
-                    document.getElementById("cont-bank").style.display = "none"
-                    document.getElementById("cont-tipe").style.display = "none";
-                    document.getElementById("cont-cash").style.display = "none";
+                    var cattipe = "Memorial"
+                    cont += `
+                            <span class="cont-text"> Tipe Kategori </span><br>
+                            <select onchange="getCatItem()"  class="  cont-form" name="Item_CatTipe" id="Item_CatTipe" aria-label="Default select example">
+                                <option value="">Pilih</option>
+                                <option value="M"> ${cattipe} </option>
+                            </select>
+                        `
+                    document.getElementById("cont-cash").innerHTML = cont ;
                 }
             } 
+
             function Update(){
                 document.getElementById("Update-GL-Cont").style.display = "Block";
                 document.getElementById("Cont-Update-GL").style.display = "none";
@@ -134,9 +157,14 @@
                 });
             }
             function getCatItem(){
+                var Item_CatTipe = document.getElementById("Item_CatTipe").value;
+                console.log(Item_CatTipe)
                 $.ajax({
                     type: "get",
-                    url: "get-CatItem.asp?Item_CatTipe="+document.getElementById("Item_CatTipe").value+"&Item_CatTipee="+document.getElementById("Item_CatTipee").value,
+                    url: "get-CatItem.asp",
+                    data : {
+                        Item_CatTipe
+                    },
                     success: function (url) {
                         $('.cont-CatItem').html(url);
                     }
@@ -174,40 +202,24 @@
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <span class="cont-text"> Tipe Item </span><br>
                                 <select onchange="selectcont()"  class="  cont-form" name="Item_Tipe" id="Item_Tipe" aria-label="Default select example">
-                                    <option selected>Pilih</option>
+                                    <option value="">Pilih</option>
                                     <option value="C"> CASH </option>
                                     <option value="B"> BANK </option>
                                     <option value="M"> Memorial </option>
                                 </select>
                             </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-4" id="cont-tipe">
-                                <span class="cont-text"> Kategori </span><br>
-                                <select  class="  cont-form" name="" id="" aria-label="Default select example">
-                                    <option selected>Pilih</option>
-                                </select>
-                            </div>
                             
-                            <div class="col-lg-4 col-md-4 col-sm-4" id="cont-cash" style="display:none">
-                                <span class="cont-text"> Tipe Kategori </span><br>
-                                <select onchange="getCatItem()"  class="  cont-form" name="Item_CatTipe" id="Item_CatTipe" aria-label="Default select example">
+                            <div class="col-lg-4 col-md-4 col-sm-4" id="cont-cash">
+                                <span class="cont-text"> Sub Kategori </span><br>
+                                <select class="cont-form" aria-label="Default select example" disabled>
                                     <option value="">Pilih</option>
-                                    <option value="T"> CASH Masuk</option>
-                                    <option value="K"> CASH Keluar </option>
                                 </select>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4" id="cont-bank" style="display:none">
-                                <span class="cont-text"> Tipe Kategori </span><br>
-                                <select onchange="getCatItem()"  class="  cont-form" name="Item_CatTipee" id="Item_CatTipee" aria-label="Default select example">
-                                    <option value="">Pilih</option>
-                                    <option value="T"> BANK Masuk </option>
-                                    <option value="K"> BANK Keluar </option>
-                                </select>
-                            </div>
+
                             <div class="col-lg-4 col-md-4 col-sm-4 cont-CatItem" id="cont-CatItem">
                                 <span class="cont-text"> Sub Kategori </span><br>
-                                <select class="  cont-form" aria-label="Default select example">
-                                    <option selected>Pilih</option>
+                                <select class="cont-form" aria-label="Default select example" disabled>
+                                    <option value="">Pilih</option>
                                 </select>
                             </div>
                         </div>

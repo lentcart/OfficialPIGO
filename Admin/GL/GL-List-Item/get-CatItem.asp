@@ -1,7 +1,6 @@
 <!--#include file="../../../Connections/pigoConn.asp" -->
 <%
     Cat_Tipe = request.queryString("Item_CatTipe")
-    Cat_Tipee = request.queryString("Item_CatTipee")
 
     if Cat_Tipe = "" then 
 
@@ -20,11 +19,19 @@
     set CatItem = GL_M_CategoryItem_PIGO_cmd.execute
     
     end if 
+    
 
+    if Cat_Tipe = "" then
+        Cat_Tipe = "Memo"
+    else if Cat_Tipe = "T" then
+        Cat_Tipe = "Masuk"
+    else if Cat_Tipe = "K" then
+        Cat_Tipe = "Keluar"
+    end if end if end if 
 %>
 <span class="cont-text"> Sub Kategori </span><br>
     <select required class=" mb-2 cont-form" name="Item_Cat_ID" id="Item_Cat_ID" aria-label="Default select example">
-    <option value="">Pilih</option>
+    <option value="">Pilih Sub Kategori <%=Cat_Tipe%> </option>
     <% do while not CatItem.eof %>
     <option value="<%=CatItem("Cat_ID")%>"> <%=CatItem("Cat_ID")%> - <%=CatItem("Cat_Name")%> </option>
     <% CatItem.movenext
