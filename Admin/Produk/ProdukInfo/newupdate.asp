@@ -33,7 +33,6 @@
 
 %>
 <!doctype html>
-<html lang="en"><!doctype html>
 <html lang="en">
     <head>
     <!-- required meta tags -->

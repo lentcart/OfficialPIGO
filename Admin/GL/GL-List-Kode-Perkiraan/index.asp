@@ -375,24 +375,31 @@
                                         </div>
                                         <div class="update-account">
                                             <div class="row mt-3 ">
-                                                <div class="col-3">
-                                                    <span class="cont-text"> Kode Account </span><br>
-                                                    <input type="text" required class="text-center cont-form" name="accid" id="accid" value="<%=UpdateChart("CA_ID")%>">
+                                                <div class="col-2">
+                                                    <span class="cont-text"> Kode Account  </span><br>
+                                                    <input type="text" required class="text-center cont-form" name="newaccid" id="newaccid<%=no%>" value="<%=UpdateChart("CA_ID")%>">
+                                                    <input type="hidden" required class="text-center cont-form" name="oldaccid" id="oldaccid<%=no%>" value="<%=UpdateChart("CA_ID")%>">
+                                                </div>
+                                                <div class="col-2">
+                                                    <span class="cont-text"> UP Account </span><br>
+                                                    <input type="text" readonly class="text-center cont-form" name="accup" id="accup<%=no%>" value="<%=UpdateChart("CA_UpID")%>">
                                                 </div>
                                                 <div class="col-6">
                                                     <span class="cont-text"> Nama Account </span><br>
-                                                    <input type="text" required class="cont-form" name="accname" id="accname" value="<%=UpdateChart("CA_Name")%>">
+                                                    <input type="text" required class="cont-form" name="accname" id="accname<%=no%>" value="<%=UpdateChart("CA_Name")%>">
                                                 </div>
-                                                <div class="col-3">
-                                                    <span class="cont-text"> UP Account </span><br>
-                                                    <input type="text" readonly class="text-center cont-form" name="accup" id="accup" value="<%=UpdateChart("CA_UpID")%>">
+                                                <div class="col-2">
+                                                    <span class="cont-text"> Status Account </span><br>
+                                                    <select class="cont-form" required aria-label="Default select example" name="aktifyn" id="aktifyn<%=no%>">
+                                                        <option value="Y"> Aktif </option>
+                                                        <option value="N"> Non-Aktif </option>
+                                                    </select>
                                                 </div>
-                                                
                                             </div>
                                             <div class="row mt-3">
                                                 <div class="col-4">
                                                     <span class="cont-text"> Kelompok Account </span><br>
-                                                    <select class="cont-form" required aria-label="Default select example" name="acckel" id="acckel">
+                                                    <select class="cont-form" required aria-label="Default select example" name="acckel" id="acckel<%=no%>">
                                                         <option value="<%=UpdateChart("KCA_ID")%>"><%=UpdateChart("KCA_ID")%> - <%=UpdateChart("KCA_Name")%></option>
                                                         <% do while not CAKel.eof %>
                                                             <option value="<%=CAKel("KCA_ID")%>"><%=CAKel("KCA_ID")%> - <%=CAKel("KCA_Name")%></option>
@@ -402,7 +409,7 @@
                                                 </div>
                                                 <div class="col-2">
                                                     <span class="cont-text"> Jenis Account </span><br>
-                                                    <select class="cont-form" required aria-label="Default select example" name="accjenis" id="accjenis">
+                                                    <select class="cont-form" required aria-label="Default select example" name="accjenis" id="accjenis<%=no%>">
                                                     <% if UpdateChart("CA_Jenis") = "D" then %>
                                                         <option value="D">Debet</option>
                                                     <% else %>
@@ -414,7 +421,7 @@
                                                 </div>
                                                 <div class="col-2">
                                                     <span class="cont-text"> Type Account </span><br>
-                                                    <select class="cont-form" required aria-label="Default select example" name="acctype" id="acctype">
+                                                    <select class="cont-form" required aria-label="Default select example" name="acctype" id="acctype<%=no%>">
                                                     <% if UpdateChart("CA_Type") = "H" then %>
                                                         <option value="H">Header</option>
                                                     <% else %>
@@ -426,7 +433,7 @@
                                                 </div>
                                                 <div class="col-2">
                                                     <span class="cont-text"> Golongan Acc </span><br>
-                                                    <select class="cont-form" required aria-label="Default select example" name="accgol" id="accgol">
+                                                    <select class="cont-form" required aria-label="Default select example" name="accgol" id="accgol<%=no%>">
                                                     <% if UpdateChart("CA_Golongan") = "N" then %>
                                                         <option value="N">Neraca</option>
                                                     <% else %>
@@ -438,7 +445,7 @@
                                                 </div>
                                                 <div class="col-2">
                                                     <span class="cont-text"> Tipe Item Acc </span><br>
-                                                    <select class="cont-form" required aria-label="Default select example" name="acctipeitem" id="acctipeitem">
+                                                    <select class="cont-form" required aria-label="Default select example" name="acctipeitem" id="acctipeitem<%=no%>">
                                                     <% if UpdateChart("CA_ItemTipe") = "C" then %>
                                                         <option value="C">Cash</option>
                                                     <% else %>
@@ -479,14 +486,16 @@
                                     }
                                     }
                                     function updateAccount<%=no%>(){
-                                        var accid       = $('#accid').val();
-                                        var accname     = $('#accname').val();
-                                        var accup       = $('#accup').val();
-                                        var accjenis    = $('#accjenis').val();
-                                        var acctype     = $('#acctype').val();
-                                        var accgol      = $('#accgol').val();
-                                        var acckel      = $('#acckel').val();
-                                        var acctipeitem = $('#acctipeitem').val();
+                                        var newaccid    = $('#newaccid<%=no%>').val();
+                                        var oldaccid    = $('#oldaccid<%=no%>').val();
+                                        var accname     = $('#accname<%=no%>').val();
+                                        var accup       = $('#accup<%=no%>').val();
+                                        var accjenis    = $('#accjenis<%=no%>').val();
+                                        var acctype     = $('#acctype<%=no%>').val();
+                                        var accgol      = $('#accgol<%=no%>').val();
+                                        var acckel      = $('#acckel<%=no%>').val();
+                                        var acctipeitem = $('#acctipeitem<%=no%>').val();
+                                        var aktifyn     = $('#aktifyn<%=no%>').val();
                                         Swal.fire({
                                             title: 'Anda Yakin Akan Mengubah Data Tersebut ?',
                                             showDenyButton: true,
@@ -496,20 +505,25 @@
                                             }).then((result) => {
                                             if (result.isConfirmed) {
                                                 $.ajax({
-                                                    type: "get",
+                                                    type: "GET",
                                                     url: "Update-Account.asp",
-                                                        data:{
-                                                            accid ,     
-                                                            accname,     
-                                                            accup,    
-                                                            accjenis,    
-                                                            acctype,     
-                                                            accgol,      
-                                                            acckel,      
-                                                            acctipeitem 
-                                                        },
+                                                    data:{
+                                                        newaccid,
+                                                        oldaccid,     
+                                                        accname,     
+                                                        accup,    
+                                                        accjenis,    
+                                                        acctype,     
+                                                        accgol,      
+                                                        acckel,      
+                                                        acctipeitem,
+                                                        aktifyn 
+                                                    },
                                                     success: function (data) {
+                                                        console.log(data);
                                                         Swal.fire('Data Berhasil Diubah', '', 'success')
+                                                        var modal<%=no%> = document.getElementById("myModal<%=no%>");
+                                                        modal<%=no%>.style.display = "none";
                                                     }
                                                 });
                                             } else if (result.isDenied) {
